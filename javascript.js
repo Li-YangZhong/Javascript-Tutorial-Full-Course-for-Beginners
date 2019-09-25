@@ -1,3 +1,5 @@
+
+
 //console.log('test3');//comment
 /*another
 kind of
@@ -773,59 +775,59 @@ comment*/
 
 // console.log(PI);
 
-//================
-var magic = function() {
-    return new Date();
-}
+// //================
+// var magic = function() {
+//     return new Date();
+// }
 
-console.log(magic());
-//===============
-var magic = () => {
-    return new Date();
-}
+// console.log(magic());
+// //===============
+// var magic = () => {
+//     return new Date();
+// }
 
-console.log(magic());
-//============
-var magic = () => new Date();
+// console.log(magic());
+// //============
+// var magic = () => new Date();
 
-console.log(magic());
-//===============
-var myConcat = function(arr1, arr2) {
-    return arr1.concat(arr2);
-}
+// console.log(magic());
+// //===============
+// var myConcat = function(arr1, arr2) {
+//     return arr1.concat(arr2);
+// }
 
-console.log(myConcat([1,2],[3,4,5]));
-//=============
-var myConcat = (arr1, arr2) => arr1.concat(arr2);
+// console.log(myConcat([1,2],[3,4,5]));
+// //=============
+// var myConcat = (arr1, arr2) => arr1.concat(arr2);
 
-console.log(myConcat([1,2],[3,4,5]));
-//==============
+// console.log(myConcat([1,2],[3,4,5]));
+// //==============
 
-const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+// const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
 
-const squareList = (arr) => {
-    const squaredIntergers = arr.filter(num => Number.isInteger(num) && num > 0).map( x => x * x);
-    return squaredIntergers;
-}
+// const squareList = (arr) => {
+//     const squaredIntergers = arr.filter(num => Number.isInteger(num) && num > 0).map( x => x * x);
+//     return squaredIntergers;
+// }
 
-const squaredIntegers =squareList(realNumberArray);
-console.log(squaredIntegers);
-//===================
-// const increment = (function() {
-//     return function increment(number, value = 1) {
-//         return number + value;
-//     }
-// })();
+// const squaredIntegers =squareList(realNumberArray);
+// console.log(squaredIntegers);
+// //===================
+// // const increment = (function() {
+// //     return function increment(number, value = 1) {
+// //         return number + value;
+// //     }
+// // })();
+// // console.log(increment(5,2));
+// // console.log(increment(5));
+// // console.log(increment);
+// //================
+// function increment(number, value = 1) {
+//     return number + value;
+// };
 // console.log(increment(5,2));
 // console.log(increment(5));
 // console.log(increment);
-//================
-function increment(number, value = 1) {
-    return number + value;
-};
-console.log(increment(5,2));
-console.log(increment(5));
-console.log(increment);
 //===============
 // function sum(x, y, z) {
 //     const args = [x,y,z];
@@ -1025,12 +1027,50 @@ console.log(increment);
 // console.log(zeus.targetPlanet);
 //===============
 
-class SpaceShuttle {
-    constructor(targetPlanet) {
-        this.targetPlanet = targetPlanet;
-    }
+// class SpaceShuttle {
+//     constructor(targetPlanet) {
+//         this.targetPlanet = targetPlanet;
+//     }
 
-}
-var zeus = new SpaceShuttle('Jupiter');
+// }
+// var zeus = new SpaceShuttle('Jupiter');
 
-console.log(zeus.targetPlanet);
+// console.log(zeus.targetPlanet);
+//====================
+
+// function makeClass() {
+//     class Vegetable {
+//         constructor(name) {
+//             this.name = name;
+//         }
+//     }
+//     return Vegetable;
+// }
+// const Vegetable = makeClass();
+// console.log(Vegetable);
+// const carrot = new Vegetable('carrot');
+// console.log(carrot.name);
+//==============
+// function makeClass() {
+//     class Thermostat {
+//         constructor (temp) {
+//             this._temp = 5/9 * (temp-32);
+//         }
+//         get temperature() {
+//             return this._temp;
+//         }
+//         set temperature(updatedTemp) {
+//             this._temp = updatedTemp;
+//         }
+
+//     }
+//     return Thermostat;
+// }
+
+// const Thermostat =makeClass();
+// const thermos = new Thermostat(76);
+// let temp = thermos.temperature;
+// thermos.temperature = 26;
+// temp = thermos.temperature;
+// console.log(temp);
+//===============

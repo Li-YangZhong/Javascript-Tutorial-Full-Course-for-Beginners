@@ -910,3 +910,127 @@ console.log(increment);
 // console.log(a);
 // console.log(b);
 //=======================
+
+// const source = [1,2,3,4,5,6,7,8,9,10];
+// function removeFirstTwo(list) {
+//     const [ , , ...arr] = list;
+
+//     return arr;
+// }
+// const arr = removeFirstTwo(source);
+// console.log(arr);
+// console.log(source);
+
+//==============
+
+// const stats = {
+//     max: 56.78,
+//     standard_deviation: 4.34,
+//     median: 34.54,
+//     mode: 23.87,
+//     min: -0.75,
+//     average: 35.85
+// };
+
+// const half = (function() {
+
+//     return function half(stats) {
+//         return (stats.max + stats.min)/2.0;
+//     }
+// })();
+// console.log(stats);
+// console.log(half(stats));
+//=================
+// const stats = {
+//     max: 56.78,
+//     standard_deviation: 4.34,
+//     median: 34.54,
+//     mode: 23.87,
+//     min: -0.75,
+//     average: 35.85
+// };
+
+// const half = (function() {
+
+//     return function half({max, min}) {
+//         return (max + min)/2.0;
+//     }
+// })();
+// console.log(stats);
+// console.log(half(stats));
+//============
+// const person = {
+//     name: "Zodiac Hasbro",
+//     age: 56
+// };
+// const greeting = `Hello, my name is ${person.name}!
+// I am ${person.age} years old.`;
+// console.log(greeting);
+
+// const result = {
+//     failure: ["no-var", "var-on-top", "linebreak"],
+// }
+
+// function makeList(arr) {
+//     const resultDisplayArray =[];
+//     for(let i =0; i < arr.length; i++) {
+//         resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)
+//     }
+//     return resultDisplayArray;
+// }
+
+// const resultDisplayArray = makeList(result.failure);
+// console.log(resultDisplayArray);
+//================
+
+// const createPerson = (name, age, gender) => {
+
+//     return {
+//         name: name,
+//         age: age,
+//         gender: gender
+//     };
+// }
+// console.log(createPerson("Zodiac Hsbro", 56, "male"));
+//================
+
+// const createPerson = (name, age, gender) => ( {name, age, gender});
+// console.log(createPerson("Zodiac Hsbro", 56, "male"));
+//=============
+// const bicycle = {
+//     gear: 2,
+//     setGear: function(newGear) {
+//         "use strict";
+//         this.gear = newGear;
+//     }
+// };
+// bicycle.setGear(3);
+// console.log(bicycle.gear);
+//==================
+// const bicycle = {
+//     gear: 2,
+//     setGear(newGear) {
+//         "use strict";
+//         this.gear = newGear;
+//     }
+// };
+// bicycle.setGear(3);
+// console.log(bicycle.gear);
+//================
+// var SpaceShuttle = function(targetPlanet) {
+//     this.targetPlanet = targetPlanet;
+// }
+// var zeus = new SpaceShuttle('Jupiter');
+
+// console.log(zeus.targetPlanet);
+//===============
+
+class SpaceShuttle {
+    constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet;
+    }
+
+}
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPlanet);
